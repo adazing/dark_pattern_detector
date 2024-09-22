@@ -1,0 +1,6 @@
+detector/api/utils/web_scraping/labeled_data.csv
+detector/api/utils/web_scraping/new_data.csv
+detector/api/utils/web_scraping/ranked_sites.csv
+detector/api/utils/model_training/data.csv
+detector/api/utils/model_training/results
+env/
