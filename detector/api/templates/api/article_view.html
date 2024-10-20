@@ -1,0 +1,166 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Patterns Detector | What Are Dark Patterns? </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'api/styles/articles.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/general.css' %}">
+  </head>
+  <body>
+    <header class="header">
+        <div class="left-section">
+          <a class="home-button" href="{% url 'home' %}">
+            <p>Dark Patterns Detector</p>
+          </a>
+        </div>
+        <div class="right-section">
+          <a class="header-button" href="{% url 'about' %}">
+            <p>About</p>
+          </a>
+          <a class="header-button" href="{% url 'article_view' %}">
+            <p>Info</p>
+          </a>
+        </div>
+      </header>
+    <main class="wrapper">
+      <!-- <div>
+        <p class="name" id="what_are">What Are Dark Patterns?</p>
+      </div>
+      <div>
+        <p class="subtitle">What dark patterns are, the types of dark patterns, and how to avoid them. </p>
+      </div>
+      <div class="author-info">
+        <p class="author-name">Rachel Rakower</p>
+        <img class="author-picture" src="pictures/placeholder-photo.jpg">
+      </div> -->
+      <!-- <div class="wrapper"></div> -->
+      <iframe class="article" src="https://docs.google.com/document/d/e/2PACX-1vShJWQItY56atusASfHdun1FbTJj1NWL5Ug5nxZdvqYpV4vdZlng-RoxYXm8rDn4bQ2Dg8O_2krOJEP/pub?embedded=true"></iframe>
+    <!-- </div> -->
+<!-- <div class="section"><p class="text"><b>What are dark patterns?</b></p>
+        <p class="text">
+            Dark patterns, or deceptive patterns, are comprised of several different kinds of tricks that websites and apps use to influence users to do things they did not intend to do.
+        </p>
+    </div>
+    <div class="section">
+        <p class = "text" id="types"><b>What are the types of dark patterns?</b></p> 
+        <p class="text">
+            There are many different types of dark patterns that work to influence users in several different ways. These include but are not limited to “confirmshaming”, disguised ads, fake scarcity, fake social proof, fake urgency, hard to cancel services, hidden costs, nagging, preselection, and sneaking.
+        </p>
+      </div>
+<div class="section">
+<p class = "text"><b>Confirmshaming</b></p> 
+    <img class="article-image" src="{% static 'api/images/image1.png' %}">
+
+      <p class="text">
+        First off, confirmshaming works by guilting the user into completing a certain action. This dark pattern can prominently be seen when websites present you with two options for proceeding with a certain action. Take the notification on the right for example:
+      </p>
+      <p class="text">
+        Instead of having two simple choices of “accept” or “deny” this company has worded these two choices in a way intended to make the user feel bad about saying no. This tactic is also prominently displayed in the language-learning company Duolingo’s practice reminders:
+      </p>
+      <img class="article-image" src="{% static 'api/images/image2.png' %}">
+      <p class="text">
+        While this example may seem harmless, these tactics can be used to push users to accept notifications they might not otherwise agree to, subscribe to services they would not have wanted, or spend their money in other ways that they would not have originally done.
+      </p>
+      </div>
+<div class="section">
+<p class = "text"><b>Disguised Ads</b></p> 
+      <p class="text">
+        This category of dark patterns is relatively straightforward. To get users to engage with advertisements placed on a certain website, these ads are designed to look like elements of the website so that users will click on them by accident. For example, the ads may look like a giant “continue” or “download” button.
+      </p>
+      <img class="article-image" src="{% static 'api/images/image3.png' %}">
+      <p class="text">
+        In this image you can see a page littered with disguised ads. The real download button for the website is located at the top, but all over the page are advertisements that also look like download buttons. 
+      </p>
+      </div>
+<div class="section">
+<p class = "text"><b>Fake scarcity</b></p> 
+      <p class="text">
+        This dark pattern works by exploiting scarcity cognitive bias. Simply put, people place a higher value on items or products that are perceived as rare or scarce. Many websites include false indications of a certain product’s scarcity to push a user to buy the product. This listing for a coffee table, for example, includes a notice that the item is “selling fast” triggering a customer to buy the item out of fear that it will sell out.
+      </p>
+      <img class="article-image" src="{% static 'api/images/image4.png' %}">
+      <p class="text">
+        Often, however, banners claiming that an item is in short supply are completely fake. There may be many items in stock, but making the claim that the item may not last manipulates the user into making a purchase so they do not miss out.
+      </p>
+      </div>
+<div class="section">
+<p class = "text"><b>Fake social proof</b></p> 
+      <p class="text">
+        This dark pattern works by using fake reviews or testimonials to convince users that a service or product is more popular or trustworthy than it actually is. For example, take pop-ups on commerce sites stating that a certain product has been purchased by someone recently. It is true that there are services using these pop-ups to reflect real sales. However, there are also companies that can create these pop-ups using randomly generated messages and times. They are not true reflections of the popularity of an item and can influence a user to make a purchase based on false information.
+      </p>
+      <img class="article-image" src="{% static 'api/images/image5.png' %}">
+      </div>
+<div class="section">
+<p class = "text"><b>Fake urgency</b></p>
+      <p class="text">
+        This dark pattern works by pressuring a user into completing a certain action based on false claims that there is a time limit. For example, a countdown timer may alert a user that a sale will end in a certain amount of time, when in reality nothing will happen when the timer reaches zero. Or, as seen in the image below, websites may stress that deals are for a limited time only when in reality the price will stay the same.
+      </p>
+      <img class="article-image" src="{% static 'api/images/image6.png' %}">
+      <p class="text">
+        Of course, there are many instances where sales and deals truly are only available for a short window of time. However, users should be aware that these claims can be fake and are intended to make them purchase an item or service prematurely when they have plenty of time to evaluate the decision.
+      </p>
+      </div>
+<div class="section">
+<p class = "text"><b>Hard to cancel services</b></p> 
+      <p class="text">
+        For a dark pattern designer, making a service easy to subscribe to but difficult to opt out of is a recipe for success. By offering an easy way in and then making it extremely difficult for users to cancel, companies maximize the number of customers they can extract money from who truly do not want their subscriptions anymore but cannot afford the time necessary to go through the hassle of canceling. Some gym memberships, for example, are famously easy to sign up for and difficult to cancel. While you may be able to sign up for a gym membership on their website, the company may force you to navigate through difficult-to-find pages to cancel. They might also require users to call to cancel their subscription or even dictate that customers must come in person to do so.
+      </p>
+        </div>
+<div class="section">
+<p class = "text"><b>Hidden Costs</b></p> 
+        <p class="text">
+        This dark pattern works by enticing users to start the process of making a purchase by offering a low price. However, when the user checks out and finishes the process, the end price ends up being much more expensive as surprise fees are added to the total. Since the user has already invested time and effort into the process of selecting an item and going through the checkout process they are more likely to go through with buying the product despite the price increase. One example of a popular company that utilizes this dark pattern to boost sales is StubHub. This company has been found to mislead customers by offering a cheaper ticket price upfront and a more expensive one at checkout once the customer has filled out the rest of their information.
+        </p>
+        <img class="article-image" src="{% static 'api/images/image7.png' %}">
+        <p class="text">
+        In fact, in August of 2024 the attorney general of Washington, DC filed a lawsuit against StubHub for its deceptive marketing practices and use of multiple dark patterns including false scarcity, hidden costs, and others.
+        </p>
+        </div>
+<div class="section">
+<p class = "text"><b>Nagging</b></p> 
+        <p class="text">
+        Websites or apps utilizing this dark pattern will bombard the user with notifications asking them to perform a certain action to the point where the user may give in and go along in order to stop the endless pop-ups. This dark pattern may be prominently displayed when websites or apps request to send the user notifications. Often there is no option for “no” but rather, as displayed in the image, only two choices: “allow” and “not now.” This pop-up will continue to annoy the user until he or she inevitably gives in and clicks “allow” to stop the pop-up from continuing to interrupt them.
+        </p>
+        <img class="article-image" src="{% static 'api/images/image8.png' %}">
+        </div>
+<div class="section">
+<p class = "text"><b>Preselection</b></p>
+        <p class="text">
+        Preselection occurs when a website or app user is presented with choices in which one has already been selected for them. This dark pattern exploits the default effect cognitive bias which states that people are most likely to choose the option that requires the least amount of thought or effort. Since an option has already been chosen for the user, even if it is not one that he or she would have chosen if all options were presented equally, he or she may continue with the preselected choice. 
+        </p>
+        </div>
+<div class="section">
+<p class = "text"><b>Sneaking</b></p> 
+        <p class="text">
+        A website or app utilizes sneaking if it deliberately hides information that is relevant to the user to manipulate him or her. In more obvious cases, this may mean adding a certain subscription or product to a user’s cart without their knowledge in the hopes that they do not realize and purchase the product by accident. It may also mean making it apparent that a certain action will have a specific result when in reality, when the user performs the action, another undesired result occurs. One example of this dark pattern can be found in the below prompt for a Windows update. While at first the prompt may seem perfectly normal, in reality, if users click the X button to reject the update, the computer proceeds regardless.
+        </p>
+        <img class="article-image" src="{% static 'api/images/image9.png' %}">
+        </div>
+<div class="section">
+<p class = "text"><b>What companies have been found to use dark patterns?</b></p> 
+        <p class="text">
+        Surprisingly, dark pattern usage is not just confined to small “sketchy” websites. Many popular and trusted companies have been exposed for using dark patterns including Amazon, AT&T, Figma, Dell, HP, Instacart, Under Armour, Anastasia Beverly Hills, Hotels.com, Expedia, and many, many more. 
+        </p>
+        <p class = "text" id="avoid"><b>How can we avoid dark patterns?</b></p> 
+        <p class="text">
+        One of the best ways to avoid dark patterns is to be aware that they exist. Many of these tricks and traps rely on the user having no knowledge of how they work. Understanding how dark patterns can manipulate users may help you avoid being influenced in the future. We encourage you to check out more literature on the topic of dark patterns to explore this complex and sneaky world of manipulative techniques. In addition, our Chrome extension can help you recognize and avoid falling for many different types of dark patterns. With a simple click, you can add this extension to your browser and enjoy a more free and safe browsing experience!
+        </p>
+    </div> -->
+    </main>
+  </body>
+  <!-- <script>
+    var iframe = document.getElementById('article');
+    
+    document.addEventListener('DOMContentLoaded', function() {
+        iframe.onload = function() {
+            // Access the contentDocument and scrollHeight of the iframe
+            console.log(iframe.contentWindow.document.body.scrollHeight);
+            iframe.style.height = iframe.contentWindow.document.body.scrollHeight + 'px';
+        }
+    })
+    
+    </script> -->
+  </html>

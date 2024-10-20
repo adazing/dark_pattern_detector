@@ -19,7 +19,7 @@ class BatchLabelResponse(BaseModel):
 def label_batch(batch):
     prompt = """
         You are tasked with categorizing e-commerce text into one of the following categories: 
-            ['Urgency', 'Not Dark Pattern', 'Scarcity', 'Misdirection', 'Social Proof', 'Obstruction', 'Sneaking', 'Forced Action'].
+            Urgency, Not Dark Pattern, Scarcity, Misdirection, Social Proof, Obstruction,Sneaking, Forced Action
 
         Here are the descriptions for each category:
             - Urgency: Indicating to users that a deal or discount will expire using a counting-down timer.  Indicating to users that a deal or sale will expire will expire soon without specifying a deadline. (ex. OFFER ONLY AVAILABLE NOW!)
@@ -32,7 +32,7 @@ def label_batch(batch):
             - Forced Action:  Coercing users to create accounts or share their information to complete their tasks. (ex. To get the 50% off, please sign up)
 
         Now, categorize the following texts found on ecommerce sites into one of these categories:
-            
+        
         Texts:
     """+'\n\n'.join([f"{str(idx)}. {batch[idx]}" for idx in range(len(batch))])+"\n     Categories:"
 

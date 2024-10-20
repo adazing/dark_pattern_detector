@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Patterns Detector | About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'api/styles/about.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/general.css' %}">
+  </head>
+  <body>
+    <header class="header">
+        <div class="left-section">
+          <a class="home-button" href="{% url 'home' %}">
+            <p>Dark Patterns Detector</p>
+          </a>
+        </div>
+        <div class="right-section">
+          <a class="header-button" href="{% url 'about' %}">
+            <p>About</p>
+          </a>
+          <a class="header-button" href="{% url 'article_view' %}">
+            <p>Info</p>
+          </a>
+        </div>
+      </header>
+    <main >
+      <div class="hero-left">
+        <!-- <img class="demo-picture" src="pictures/placeholder-photo.jpg"> -->
+      </div>
+      <div class="hero-right">
+        <p class="name">About Us</p>
+        <p class="description">
+            We are a team of high school students committed to improving the online experience. After seeing how certain websites use misleading tactics, known as dark patterns, to influence users' decisions, we developed a browser extension to detect and highlight these practices. Our goal is to help users browse the web more confidently by providing them with clear information about when they might be manipulated. We believe in fostering a more transparent and user-friendly internet for everyone.
+        </p>
+        <button class="get-started-button" href="">
+          <p>Get started</p>
+        </button>
+        <a class="learn-about-dark-patterns-button" href="{% url 'articles_list' %}">
+          <p>Learn about dark patterns</p>
+        </a>
+      </div>
+    </main>
+  </body>
+</html>

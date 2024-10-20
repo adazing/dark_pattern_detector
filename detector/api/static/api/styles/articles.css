@@ -1,0 +1,79 @@
+body {
+  padding-top: 55px;
+  overflow:clip;
+  /* padding-left: 30px;
+  padding-right: 30px; */
+}
+.name {
+  font-size: 36px;
+  font-weight: 600;
+}
+.subtitle {
+  margin-top: 8px;
+  font-size: 14px;
+  margin-bottom: 50px;
+}
+.author-info {
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.author-picture {
+  margin-left: 20px;
+  height: 30px;
+  border-radius: 20px;
+}
+.author-name {
+  font-size: 14px;
+}
+.text {
+  font-size: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.article-image {
+  max-height: 400px;
+  max-width: 1000px;
+  width: 20vw;
+  /* border-radius: 8px; */
+  /* border: 1px solid #001B2E; */
+  padding: 5px;
+  margin: auto;
+  /* float: right; */
+}
+.section > p {
+  max-width: 800px;
+  width: 100%;
+}
+.wrapper {
+  /* max-width: 1000px; */
+  /* margin: auto; */
+  position: relative;
+  /* overflow-y: scroll; */
+  justify-content: right;
+  width: 100vw;
+  /* height: calc(100vh - 75px); */
+  display: flex;
+  /* overflow-y: scroll; */
+  /* overflow-y: visible; */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center; */
+  /* justify-content: center; */
+}
+
+.section {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 200px;
+}
+
+.article {
+  width: calc(min(816px, 100vw) / 2 + 50vw);
+  height: calc(100vh - 55px);
+  overflow-x: hidden;
+  border: none;
+  /* max-width: min(816px, 100vw); */
+}

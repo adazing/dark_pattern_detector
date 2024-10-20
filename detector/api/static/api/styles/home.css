@@ -1,0 +1,64 @@
+body {
+  padding-top: 80px;
+  padding-left: 70px;
+  padding-right: 24px;
+}
+main {
+  display: flex;
+  flex-direction: row;
+}
+.hero-left {
+  margin-top: 240px;
+  flex: 1;
+}
+.name {
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.slogan {
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+a {
+  height: 36px;
+  font-size: 20px;
+
+}
+.get-the-extension-button {
+  font-family: Montserrat, Arial;
+  /* height: 36px; */
+  width: 210px;
+  /* font-size: 30px; */
+  border-width: 0;
+  border-radius: 18px;
+  vertical-align: middle;
+  justify-content: center;
+  margin-right: 20px;
+  background-color: #F9DB6D;
+  font-weight: 600;
+}
+.browse-articles-button {
+  font-family: Montserrat, Arial;
+  /* height: 36px; */
+  width: 200px;
+  /* font-size: 30px; */
+  border-width: 0;
+  border-radius: 18px;
+  padding-top: 0;
+  vertical-align: middle;
+  justify-content: center;
+  background-color: #ffeeb0;
+}
+.hero-right {
+  margin-top: 200px;
+  flex: 1;
+  position:relative;
+}
+.demo-picture {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}

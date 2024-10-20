@@ -1,0 +1,25 @@
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+body {
+  font-family: Montserrat, Arial;
+  margin: 0;
+  /* 6ebdb5 */
+  background-color: #ffffff;
+  color: #001B2E;
+}
+a {
+  color:#001B2E;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  cursor: pointer;
+}

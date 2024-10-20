@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Patterns Detector | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;0,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'api/styles/general.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/demo.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/header.css' %}">
+  </head>
+  <body>
+    <header class="header">
+      <div class="left-section">
+        <a class="home-button" href="{% url 'home' %}">
+          <p>Dark Patterns Detector</p>
+        </a>
+      </div>
+      <div class="right-section">
+        <a class="header-button" href="{% url 'about' %}">
+          <p>About</p>
+        </a>
+        <a class="header-button" href = "{% url 'article_view' %}">
+          <p>Info</p>
+        </a>
+      </div>
+    </header>
+    <main>
+        <div class="wrapper">
+        <form action="" method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <input type="submit" value="Check">
+        </form>
+        </div>
+        <div class="response">
+            {{response}}
+        </div>
+    </main>
+  </body>
+  <script>
+    // document.addEventListener('DOMContentLoaded', function(){
+    //     var x = 
+    // })
+  </script>
+</html>

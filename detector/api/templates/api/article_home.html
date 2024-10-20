@@ -1,0 +1,54 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dark Patterns Detector | Articles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'api/styles/article-home.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/header.css' %}">
+    <link rel="stylesheet" href="{% static 'api/styles/general.css' %}">
+  </head>
+  <body>
+    <header class="header">
+        <div class="left-section">
+          <a class="home-button" href="{% url 'home' %}">
+            <p>Dark Patterns Detector</p>
+          </a>
+        </div>
+        <div class="right-section">
+          <a class="header-button" href="{% url 'about' %}">
+            <p>About</p>
+          </a>
+          <a class="header-button" href="{% url 'article_view' %}">
+            <p>Info</p>
+          </a>
+        </div>
+      </header>
+    <main>
+      <div class="top-section">
+        <p class="name">Articles</p>
+        <p class="description">Learn more about dark patterns and how to avoid being tricked by them. </p>
+      </div>
+      <div class="article-div">
+        <a class = "article-button1" href= "{% url 'article_1_view' %}">
+          <img class="demo-picture" src="{% static 'api/images/arrow.png' %}">
+          <p class="article-name">What Are Dark Patterns?</p>
+        </a>   
+      </div>
+      <div class="article-div">
+        <a class = "article-button2" href="{% url 'article_1_view' %}">
+          <img class="demo-picture" src="{% static 'api/images/arrow.png' %}">
+          <p class="article-name">Types of Dark Patterns</p>
+        </a>        
+      </div>
+      <div class="article-div">
+        <a class = "article-button1" href="{% url 'article_1_view' %}">
+          <img class="demo-picture" src="{% static 'api/images/arrow.png' %}">
+          <p class="article-name">How to Avoid Dark Patterns</p>
+        </a>   
+      </div>
+    </main>
+  </body>
+</html>
