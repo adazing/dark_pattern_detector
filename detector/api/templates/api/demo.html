@@ -12,20 +12,24 @@
   </head>
   <body>
     <header class="header">
-      <div class="left-section">
-        <a class="home-button" href="{% url 'home' %}">
-          <p>Dark Patterns Detector</p>
-        </a>
-      </div>
-      <div class="right-section">
-        <a class="header-button" href="{% url 'about' %}">
-          <p>About</p>
-        </a>
-        <a class="header-button" href = "{% url 'article_view' %}">
-          <p>Info</p>
-        </a>
-      </div>
-    </header>
+        <div class="left-section">
+          <a class="home-button" href="{% url 'home' %}">
+            <p>Dark Patterns Detector</p>
+          </a>
+        </div>
+        <div class="right-section">
+          <a class="header-button" href="{% url 'demo' %}">
+                <p>Demo</p>
+          </a>
+          <a class="header-button" href="{% url 'about' %}">
+            <p>About</p>
+          </a>
+          <a class="header-button" href="{% url 'article_view' %}">
+            <p>Info</p>
+          </a>
+        </div>
+      </header>
+
     <main>
         <div class="wrapper">
         <form action="" method="post">
