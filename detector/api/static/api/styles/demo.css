@@ -9,10 +9,18 @@
     align-items: center;
     justify-content: center;
     height: 8em;
-    padding-top: 150px;
+    padding-top: 10px;
     padding-bottom:100px;
 }
-
+.prediction-text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 8em;
+  padding-top: 150px;
+  padding-bottom:10px;
+  /* width:80%; */
+}
 .response{
     display: flex;
     align-items: center;
@@ -35,6 +43,10 @@ input[type=text]{
   height: 70px;
   font-size: 20px;
 } */
+
+.prompt {
+  font-family: Montserrat, Arial;
+}
 
 input[type=submit] {
   font-family: Montserrat, Arial;

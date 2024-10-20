@@ -2,19 +2,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Dark Patterns Detector | About</title>
+    <title>Dark Pattern Detector | About</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'api/styles/about.css' %}">
     <link rel="stylesheet" href="{% static 'api/styles/header.css' %}">
     <link rel="stylesheet" href="{% static 'api/styles/general.css' %}">
+    <link rel="icon" href=
+"{% static 'api/images/32_by_32.png' %}"
+        type="image/x-icon" />
   </head>
   <body>
     <header class="header">
         <div class="left-section">
           <a class="home-button" href="{% url 'home' %}">
-            <p>Dark Patterns Detector</p>
+            <p>Dark Pattern Detector</p>
           </a>
         </div>
         <div class="right-section">
@@ -31,12 +34,19 @@
       </header>
     <main >
       <div class="hero-left">
-        <!-- <img class="demo-picture" src="pictures/placeholder-photo.jpg"> -->
+        <img class="demo-picture" src="{% static 'api/images/demo.png' %}">
       </div>
       <div class="hero-right">
         <p class="name">About Us</p>
         <p class="description">
-            We are a team of high school students committed to improving the online experience. After seeing how certain websites use misleading tactics, known as dark patterns, to influence users' decisions, we developed a browser extension to detect and highlight these practices. Our goal is to help users browse the web more confidently by providing them with clear information about when they might be manipulated. We believe in fostering a more transparent and user-friendly internet for everyone.
+          We are a team of high school students committed to improving the online experience. After seeing how certain websites use misleading tactics, known as dark patterns, to influence users' decisions, we developed a browser extension to detect and highlight these practices. Our goal is to help users browse the web more confidently by providing them with clear information about when they might be manipulated. We believe in fostering a more transparent and user-friendly internet for everyone.
+          <br><br><b>Our Team:</b>
+          <ul class="teams-list">
+            <li>Ada Langford - AI/Backend Programmer</li>
+            <li>Sophia Lin - Frontend Programmer</li>
+            <li>Rachel Rakower - Researcher</li>
+            <li>Nathan Tao - Extension/Frontend Programmer</li>
+          </ul>
         </p>
         <button class="get-started-button" href="">
           <p>Get started</p>
