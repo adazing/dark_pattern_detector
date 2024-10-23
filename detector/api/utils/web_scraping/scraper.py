@@ -41,7 +41,7 @@ wait = WebDriverWait(driver, 10)  # Adjust wait time as needed
 # urls = pd.read_csv('sites.csv')['url'].tolist()
 urls = pd.read_csv('ranked_sites.csv')
 # urls = urls['url'].tolist()
-urls = urls.loc[(urls["dp"]==True) & (urls["deceptive"]==True)]['url'].tolist()
+urls = urls.loc[(urls["dp"]==False) & (urls["deceptive"]==False)]['url'].tolist()
 
 
 # Functions
@@ -152,7 +152,7 @@ def scrape_site(url):
     return site_data
 
 # header
-with open("new_data.csv", 'w+', newline="") as file:
+with open("no_dark_pattern_data.csv", 'w+', newline="") as file:
     writer = csv.writer(file)
     writer.writerow(["Text"])
 
@@ -161,7 +161,7 @@ for url in urls:
     try:
         site_data = scrape_site(url)
         print(site_data)
-        with open("new_data.csv", 'a', newline="", encoding="utf-8") as file:
+        with open("no_dark_pattern_data.csv", 'a', newline="", encoding="utf-8") as file:
             writer = csv.writer(file, quotechar='"', escapechar='\\', quoting=csv.QUOTE_MINIMAL) # quotechar='"', escapechar='\\', quoting=csv.QUOTE_MINIMAL
             for t in site_data: 
                 writer.writerow([t])

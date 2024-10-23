@@ -2,5 +2,7 @@ detector/api/utils/web_scraping/labeled_data.csv
 detector/api/utils/web_scraping/new_data.csv
 detector/api/utils/web_scraping/ranked_sites.csv
 detector/api/utils/model_training/data.csv
+detector/api/utils/model_training/new_data.csv
 detector/api/utils/model_training/results
 env/
+detector/api/utils/web_scraping/no_dp_data.sv
