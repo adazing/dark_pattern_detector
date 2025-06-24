@@ -2,7 +2,7 @@ from django.shortcuts import render
 from rest_framework import status
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .utils.model_training.evaluate_tiny_multilabel import evaluate_multilabel
+from .utils.model_training.evaluate_tiny_multilabel_v2 import evaluate_multilabel
 from django.shortcuts import get_object_or_404
 from .forms import demoForm
 # from .models import Article
@@ -42,10 +42,8 @@ def demo_view(request):
             result = evaluate_multilabel([text])
             result = result["elements"][0]["dark_patterns"]
             max_type="No Dark Pattern Detected"
-            max_result = 0.5
             for x in result:
                 if x["probability"]>0.5:
-                    max_result=x["probability"]
                     max_type = x["type"]
             # print(result["elements"][0]["dark_patterns"])
             return render(request, "api/demo.html", {"form":form, "response": max_type})
